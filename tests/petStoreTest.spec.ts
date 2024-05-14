@@ -16,6 +16,5 @@ test('should successfully add a pet', async ({ request,baseURL }) => {
   const responseBody = await response.json();
   expect(responseBody).toEqual(expect.objectContaining(requestBody));
   console.log("Response body:", responseBody);
-
 });
 
