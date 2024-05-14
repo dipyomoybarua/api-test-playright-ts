@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { generatePetData } from '../src/utils/faker';
 import { jsonHeaders } from '../src/utils/headers'; 
 
-test('should successfully add a pet', async ({ request,baseURL }) => {
+test('It should successfully add a pet', async ({ request,baseURL }) => {
   // Generate fake pet data
   const requestBody = generatePetData();
   const apiUrl = `${baseURL}/pet`;  
