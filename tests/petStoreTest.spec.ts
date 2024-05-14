@@ -11,10 +11,12 @@ test('should successfully add a pet', async ({ request,baseURL }) => {
     data: requestBody,
   });
   const status = response.status();
-  console.log("Response status code:", status);
   expect(status).toBe(200);
   const responseBody = await response.json();
   expect(responseBody).toEqual(expect.objectContaining(requestBody));
-  console.log("Response body:", responseBody);
+  expect(responseBody.id).toBeDefined();
+  expect(responseBody.photoUrls.length).toBeGreaterThan(0);
+  expect(responseBody.tags.length).toBeGreaterThan(0);
+  console.log("Response body is correct:", responseBody);
 });
 
