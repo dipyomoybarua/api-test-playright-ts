@@ -35,5 +35,3 @@ export function generatePetData(): PetData {
     status: faker.helpers.arrayElement(['available', 'pending', 'sold']),
   };
 }
-
-// const user = generatePetData();

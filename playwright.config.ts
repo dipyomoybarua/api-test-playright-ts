@@ -1,16 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
 /**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
-
-/**
  * See https://playwright.dev/docs/test-configuration.
  */
-
-// export default () => {
 
 const baseURL = process.env.BASE_URL || `https://petstore.swagger.io/v2`;
 
@@ -82,4 +74,4 @@ export default defineConfig({
   //   reuseExistingServer:!process.env.CI,
   // },
 });
-// }
+
