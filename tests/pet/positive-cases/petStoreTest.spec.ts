@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
-import { generatePetData } from '../src/utils/faker';
-import { jsonHeaders } from '../src/utils/headers'; 
+import { generatePetData } from '../../../src/utils/faker';
+import { jsonHeaders } from '../../../src/utils/headers'; 
 
 test('It should successfully add a pet', async ({ request,baseURL }) => {
   // Generate fake pet data
