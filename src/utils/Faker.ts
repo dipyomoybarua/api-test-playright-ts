@@ -35,3 +35,19 @@ export function generatePetData(): PetData {
     status: faker.helpers.arrayElement(['available', 'pending', 'sold']),
   };
 }
+
+export function generateNegativePetData(): PetData[] {
+  return [
+    {
+      id: -1,
+      category: {
+        id: -1, 
+        name: '', 
+      },
+      name: '',
+      photoUrls: [], 
+      tags: [], 
+      status: 'available', 
+    },
+  ];
+}
